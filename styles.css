@@ -1,0 +1,97 @@
+/* css classes for the main page & body */
+.title {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: #333;
+    font-family: monospace;
+}
+
+/* css classes for the game board */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 20px);
+    grid-template-rows: repeat(10, 20px);
+}
+
+.game-board {
+    font-size: 0;
+    /* Removes unexpected spacing between inline-block elements */
+}
+
+.board-cell {
+    display: inline-block;
+    /* Display cells in a line */
+    border: 1px solid #ddd;
+    width: 10px;
+    height: 10px;
+    vertical-align: top;
+}
+
+.hit {
+    background-color: red;
+}
+
+.ship {
+    background-color: gray;
+}
+
+.water {
+    background-color: blue;
+}
+
+/* css classes for test cases */
+.test-case {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.test-case .header {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4b6082;
+}
+
+.test-case .array {
+    font-family: monospace;
+    margin-bottom: 5px;
+}
+
+.test-case .result {
+    color: green;
+    margin-top: 5px;
+}
+
+.output-container {
+    display: flex;
+    align-items: center;
+}
+
+.board-container {
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.board-heading {
+    margin-right: 10px;
+    white-space: nowrap;
+    width: 115px;
+}
+
+.output-label {
+    width: 125px;
+}
+
+.output-value {
+    flex-grow: 1;
+    font-weight: bolder;
+}
